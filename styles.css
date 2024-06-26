@@ -298,6 +298,10 @@ hr {
     margin-top: 0;
 }
 
+.section.publications {
+    /* background-color: #fffacd; */
+    background-color: #EEEEFF;
+}
 .publication {
     display: flex;
     flex-direction: column;
@@ -320,7 +324,7 @@ hr {
 
 }
 .pub-venue {
-    color: #03EA74;
+    color: #00AB66;
 }
 .pub-authors {
     margin-top: 5px;
