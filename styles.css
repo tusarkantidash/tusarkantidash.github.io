@@ -150,6 +150,8 @@ body {
     font-size: small;
     font-weight: normal;
     color: #555;
+    padding-left: 5px;
+    padding-top: 5px;
 }
 
 .section.history .row .hist-icon img {
@@ -163,11 +165,39 @@ body {
     margin: auto;
 }
 
+.section.history .row .hist-info .hist-title {
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: .1rem;
+    color: #333;
+    margin-bottom: 0;
+}
+
+.section.history .row .hist-info .hist-org {
+    font-size: small;
+    font-weight: normal;
+    color: #888;
+    margin-top: 0;
+}
+
 @media (max-width: 992px) {
     .section.history .row .hist-icon img {
         grid-column: span 1;   
         width: 50px;
         height: 50px;
+    }
+
+    .section.history .row .timespan {
+        font-size: 10px;
+    }
+    .section.history .row .hist-info .hist-title {
+        font-size: 15px;
+    }
+    .section.history .row .hist-info .hist-org {
+        font-size: 10px;
+    }
+    .section.history .row .hist-info .hist-description {
+        font-size: 12px;
     }
 }
 
@@ -176,19 +206,7 @@ body {
     padding-left: 10px;
 }
 
-.section.history .row .hist-info .hist-title {
-    font-size: 20px;
-    font-weight: normal;
-    letter-spacing: .1rem;
-    color: #333;
-    margin-bottom: 0;
-}
-.section.history .row .hist-info .hist-org {
-    font-size: small;
-    font-weight: normal;
-    color: #888;
-    margin-top: 0;
-}
+
 .section.history .row .hist-info .hist-description {
     letter-spacing: 0.05em;
 }
@@ -242,6 +260,10 @@ body {
         grid-column-gap: 5px;
         grid-row-gap: 5px;
     }
+
+    .section.talks .card .talk-desc {
+        font-size: 12px;
+    }
 }
 .section.talks .row {
     grid-column-gap: 10px;
@@ -271,9 +293,29 @@ body {
 .section.projects .project-image {
     grid-column: span 3;
     vertical-align: top;
+    margin: auto;
 }
 .section.projects .project-info {
     grid-column: span 9;
+}
+
+.section.projects .project-info .project-title {
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: .1rem;
+    color: #333;
+    margin-bottom: 0;
+}
+
+.section.projects .project-info .project-desc {
+    margin-top: 10px;
+}
+
+.section.projects .project-info .project-fund-org {
+    font-size: small;
+    font-weight: normal;
+    color: #888;
+    margin-top: 0;
 }
 
 @media (max-width: 991px) {
@@ -295,23 +337,22 @@ body {
         grid-column-gap: 5px;
         grid-row-gap: 5px;
     }
+
+    .section.projects .project-info .project-title {
+        font-size: 15px;
+    }
+
+    .section.projects .project-info .project-desc {
+       font-size: 12px;
+    }
+
+    .section.projects .project-info .project-fund-org {
+        font-size: 10px;
+    }
 }
-.section.projects .project-info .project-title {
-    font-size: 20px;
-    font-weight: normal;
-    letter-spacing: .1rem;
-    color: #333;
-    margin-bottom: 0;
-}
-.section.projects .project-info .project-fund-org {
-    font-size: small;
-    font-weight: normal;
-    color: #888;
-    margin-top: 0;
-}
-.section.projects .project-info .project-desc {
-    margin-top: 10px;
-}
+
+
+
 
 .section.teaching {
     background-color: #ebf6f7;
@@ -326,6 +367,15 @@ body {
     font-weight: normal;
     color: #4F4F4F;
     margin-top: 0;
+}
+
+@media (max-width: 991px) {
+    .section.teaching .row .teach-info {
+        font-size: 15px;
+    }
+    .section.teaching .row .teach-info .teach-course-code {
+        font-size: 12px;
+    }
 }
 
 .section.publications {
