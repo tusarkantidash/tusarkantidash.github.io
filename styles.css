@@ -151,11 +151,24 @@ body {
     font-weight: normal;
     color: #555;
 }
+
 .section.history .row .hist-icon img {
     /* border: 2px solid tomato; */
     grid-column: span 1;   
     width: 120px;
     height: 120px;
+}
+
+.section.history .row .hist-icon {
+    margin: auto;
+}
+
+@media (max-width: 992px) {
+    .section.history .row .hist-icon img {
+        grid-column: span 1;   
+        width: 50px;
+        height: 50px;
+    }
 }
 
 .section.history .row .hist-info {
@@ -262,10 +275,19 @@ body {
 .section.projects .project-info {
     grid-column: span 9;
 }
+
 @media (max-width: 991px) {
     .section.projects .project-image {
         grid-column: span 1;
+        width: 50px;
+        height: 50px;
     }
+
+    .section.projects .project-image img {
+        height: 100%;
+        width: 100%;       
+    }
+
     .section.projects .project-info {
         grid-column: span 11;
     }
