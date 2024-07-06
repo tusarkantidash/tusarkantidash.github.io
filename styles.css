@@ -42,17 +42,6 @@ body {
     padding-top: 40px;
     padding-left: 20px;
 }
-@media (max-width: 991px) {
-    #profile-picture {
-      grid-column: span 12;
-      text-align: center;
-    }
-    #profile-description {
-      grid-column: span 12;
-      padding-top: 20px;
-      text-align: center;
-    }
-}
 
 #profile-description h1 {
     font-size: 40px;
@@ -126,6 +115,42 @@ body {
     margin-bottom: 20px;
 }
 
+@media (max-width: 992px) {
+    #profile-picture {
+        grid-column: span 12;
+        text-align: center;
+    }
+    #profile-description {
+        grid-column: span 12;
+        padding-top: 10px;
+        text-align: center;
+    }
+    #profile-description h1 {
+        font-size: 30px;
+    }
+    #profile-description h3 {
+        font-size: 14px;
+    }
+    #profile-description h2 {
+        font-size: 18px;
+        /* max-width: 300px; */
+    }
+    #profile-picture img {
+        width: 180px;
+        height: 180px;
+    }
+    #email {
+        font-size: 14px;
+    }
+    #profile-contact-info img{
+        margin-top: 2px;
+        width: 20px;
+        height: 20px;
+    
+        /* max-width: 300px; */
+    }
+}
+
 .section.history {
     /* border: 2px solid black; */
     background-color: #FFF;
@@ -189,6 +214,7 @@ body {
 
     .section.history .row .timespan {
         font-size: 10px;
+        color: #555;
     }
     .section.history .row .hist-info .hist-title {
         font-size: 15px;
